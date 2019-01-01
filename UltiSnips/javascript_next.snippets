@@ -1,0 +1,45 @@
+snippet class
+class ${1:ClassName} {
+  $0
+}
+endsnippet
+
+snippet classExt
+class ${1:ClassName} extends ${2:SuperClassName} {
+  $0
+}
+endsnippet
+
+snippet const
+const ${1:name} = $0;
+endsnippet
+
+snippet constFunc "const name = () => {...}"
+const ${1:name} = ${2:props} => $0;
+endsnippet
+
+snippet exportDefault
+export default ${1:name};
+endsnippet
+
+snippet func "() => {...}"
+(${2:props}) => {$0}
+endsnippet
+
+snippet funcInst "name = () => {...}"
+${1:name} = (${2:props}) => {$0}
+endsnippet
+
+snippet funcClass "name() {...}"
+${1:name}(${2:props}) {
+  $0
+}
+endsnippet
+
+snippet import
+import ${1:name} from '${0:path}';
+endsnippet
+
+snippet let
+let ${1:name} = $0;
+endsnippet
