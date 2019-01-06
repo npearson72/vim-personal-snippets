@@ -32,6 +32,10 @@ snippet div#
 <div id=${1:id}>$0</div>
 endsnippet
 
+snippet form
+<form action=${1:action} method=${2:method}>$0</form>
+endsnippet
+
 snippet h1
 <h1>$0</h1>
 endsnippet
@@ -68,6 +72,14 @@ snippet img.
 <img className=${1:class} src=${2:source} alt=${0:alt} />
 endsnippet
 
+snippet input
+<input type="${1:text}" name="${2:name}" ${3:placeholder="${0}"} />
+endsnippet
+
+snippet label
+<label>$0</label>
+endsnippet
+
 snippet li
 <li>$0</li>
 endsnippet
@@ -98,6 +110,10 @@ endsnippet
 
 snippet span.
 <span className=${1:class}>$0</span>
+endsnippet
+
+snippet strong
+<strong>$0</strong>
 endsnippet
 
 snippet ul
