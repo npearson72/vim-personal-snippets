@@ -9,11 +9,11 @@ snippet ahref "<a href='#'></a>" wA
 endsnippet
 
 snippet button
-<button ${1:type="button"}>$0</button>
+<button ${1:type="${2:button|reset|submit}"}>$0</button>
 endsnippet
 
 snippet button.
-<button ${1:type="button"} className=${2:class}>$0</button>
+<button ${1:type="${2:button|reset|submit}"} className=${2:class}>$0</button>
 endsnippet
 
 snippet className
