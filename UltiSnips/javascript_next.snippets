@@ -34,18 +34,12 @@ for (let ${1:i} in ${2:collection}) {
 }
 endsnippet
 
-snippet func "() => {...}"
-(${2:props}) => {$0}
+snippet func "name() {...}" i
+${1:name}(${2:props}) {$0}
 endsnippet
 
-snippet funcInst "name = () => {...}"
-${1:name} = (${2:props}) => {$0}
-endsnippet
-
-snippet funcClass "name() {...}"
-${1:name}(${2:props}) {
-  $0
-}
+snippet funcAnon "() => {...}" i
+(${2:props}) => $0
 endsnippet
 
 snippet import
@@ -54,4 +48,8 @@ endsnippet
 
 snippet let
 let ${1:name} = $0;
+endsnippet
+
+snippet letFunc "let name = () => {...}"
+let ${1:name} = ${2:props} => $0;
 endsnippet
