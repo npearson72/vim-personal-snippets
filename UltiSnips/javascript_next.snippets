@@ -22,14 +22,14 @@ snippet exportDefault
 export default ${1:name};
 endsnippet
 
-snippet forOfLoop
+snippet forOfLoop "Array loop"
 for (let ${1:i} of ${2:collection}) {
   $0
 }
 endsnippet
 
-snippet forInLoop
-for (let ${1:i} in ${2:collection}) {
+snippet forInLoop "Object loop"
+for (let ${1:key} in ${2:collection}) {
   $0
 }
 endsnippet
