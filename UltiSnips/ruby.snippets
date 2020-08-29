@@ -1,3 +1,29 @@
+snippet class "class <class_name>... end"
+class ${1:`!p snip.rv = snip.basename.title().replace('_', '')`}
+	$0
+end
+endsnippet
+
+snippet def "def <method_name>... end"
+def ${1:method_name}
+	$0
+end
+endsnippet
+
+snippet frozen
+# frozen_string_literal: true
+endsnippet
+
+snippet module "module <module_name>... end"
+module ${1:`!p snip.rv = snip.basename.title().replace('_', '')`}
+	$0
+end
+endsnippet
+
 snippet pry
 require 'pry'; binding.pry
+endsnippet
+
+snippet rescue
+rescue ${1:StandardError} => e
 endsnippet

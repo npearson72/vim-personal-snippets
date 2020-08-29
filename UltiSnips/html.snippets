@@ -123,12 +123,20 @@ snippet li.
 <li class="${1:class}">$2</li>$0
 endsnippet
 
+snippet link
+<link rel="${1:stylesheet|icon}" href="${2:location}" ${3:type="${4:text/css}"} />
+endsnippet
+
 snippet mailto "mailto link"
 <a href="mailto:${1:email}">${0:link}</a>
 endsnippet
 
 snippet meta
 <meta name="${1:name}" content="${2:content}" />
+endsnippet
+
+snippet meta "viewport"
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 endsnippet
 
 snippet nav
