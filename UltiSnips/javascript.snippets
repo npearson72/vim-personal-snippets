@@ -1,3 +1,15 @@
+snippet class
+class ${1:ClassName} {
+  $0
+}
+endsnippet
+
+snippet classExt
+class ${1:ClassName} extends ${2:SuperClassName} {
+  $0
+}
+endsnippet
+
 snippet console.log
 console.log($0);
 endsnippet
@@ -14,20 +26,24 @@ snippet console.warn
 console.warn($0);
 endsnippet
 
-snippet else
-else {
-  $0
-}
-endsnippet
-
-snippet elseif
-else if (${1:condition}) {
-  $0
-}
+snippet exportDefault
+export default ${1:name};
 endsnippet
 
 snippet forLoop
 for (${1:let i = 0; i < ${2:value}; i++}) {
+  $0
+}
+endsnippet
+
+snippet forOfLoop
+for (const ${1:i} of ${2:array}) {
+  $0
+}
+endsnippet
+
+snippet forInLoop
+for (const ${1:key} in ${2:object}) {
   $0
 }
 endsnippet
@@ -38,16 +54,18 @@ if (${1:condition}) {
 }
 endsnippet
 
-snippet ifelse
-if (${1:condition}) {
-  $2
-} else {
-  $0
-}
+snippet import
+import ${1:name} from '${0:path}';
 endsnippet
 
 snippet setTimeout
 setTimeout(${0:function}, ${1:milliseconds})
+endsnippet
+
+snippet setTimeoutArrow
+setTimeout(() => {
+  ${0}
+}, ${1:milliseconds})
 endsnippet
 
 snippet strict
